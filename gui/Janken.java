@@ -226,10 +226,10 @@ public class Janken extends Frame {
                             public void actionPerformed(ActionEvent e) {
                                 playerScore = 0;
                                 aiScore = 0;
-                                display.dispose();
-                                frame.dispose();
-                                Janken game = new Janken();
-                                game.setVisible(true);
+                                display.setVisible(false);
+                                textPlayer.setText(Integer.toString(playerScore));
+                                textAI.setText(Integer.toString(aiScore));
+                                text.setText("Results:\n");
                             }
                         });
 
